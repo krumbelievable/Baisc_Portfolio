@@ -20,7 +20,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Demo
 
-https://krumbelievable.github.io/Baisc_Portfolio/
+https://krumbelievable.github.io/Basic_Portfolio/
 
 ![](./assets/images/PortfolioSnip.PNG)
 
