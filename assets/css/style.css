@@ -1,0 +1,222 @@
+:root {
+    --backg: #27021f;
+    --text: #cc92c6;
+    --high: #c583bd;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+body {
+    position: relative ;
+    font-size: 16px;
+    background-color: var(--backg);
+    color: var(--text); 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: underline var(--text);
+    color: var(--backg);
+    margin-right: 10px;
+    font-size: 20px;
+}
+nav a:hover {
+    background-size: 100%;
+    color: var(--high);
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(147, 34, 192);
+    color: var(--backg) ;
+    padding: 20px;
+    align-items: center;
+}
+header h1 {
+    padding: 5px;
+    background-color: var(--high);
+    font-size: 2.5rem;
+}
+
+h1, h2, h3, p {
+   margin: 0;
+}
+
+main {
+    margin: 0 10px 0 10px;
+}
+
+span {
+    font-size: 10px;
+}
+
+footer {
+    justify-content: right;
+}
+
+/*class selectors*/
+.background {
+    background-image: url(../Images/pink-purple-carnival-background-header.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: right;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background h2 {
+    padding: 5px 5px;
+}
+
+.align {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.psection {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.psection > div {
+    flex: 0 0 85%;
+  }
+
+.psection p {
+    margin-bottom: 20px;
+  }
+
+address a {
+    padding: 20px 20px;
+    font-size: 20px;
+    display: inline-block;
+  }
+
+.contact {
+    background-color: rgb(66, 28, 70);
+}
+
+.center {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.item {
+    border: 6px solid var(--high);
+    color: gray;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    background-size: 150%;
+    font-size: 0.9rem;
+}
+
+.item h3 {
+      font-size: 1.5vw;
+  }
+
+/*first project*/
+.item:first-child {
+      min-height: 300px;
+      flex-basis: 100%;
+  }
+  
+.item:hover {
+    background-color: rgb(161, 160, 160);
+    transform: scale(1.1);
+  }
+
+.item div {
+    background-color: var(--backg);
+    padding: 8px 8px;
+  }
+
+/*item images and styling*/
+
+.zombo {
+    background-image: url("../Images/Zombocom.png");
+    background-size: contain;
+    background-repeat:center;
+}
+
+.music {
+    background-image: url("../Images/allinone.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.todo {
+    background-image: url("../Images/appMonster.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*responsive viewports*/
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        text-align: center;
+      }
+    
+    header h1 {
+      width: 75%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 6vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+
+    .psection > h2 {
+      border-bottom: 3px solid var(--high);
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 4vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .item:first-child {
+      min-height: 150px;
+    }
+  
+    .background {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
